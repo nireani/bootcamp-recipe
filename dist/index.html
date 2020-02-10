@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" /><button id="Search">Search</button>
+    <div id="container"></div>
+
+    <script id="recipe-template" type="text/x-handlebars-template">
+        {{#each recipe}}
+        <div class="recipe">
+        <p> <a class="title" href="{{video}}" onerror="this.href='https:https://www.minitool.com/images/uploads/articles/2019/05/youtube-video-not-available/youtube-video-not-available-1.png">{{title}}</a></p>
+        <img class="image" src="{{ img }}"> 
+       
+        <p class="ingre"> {{ ingre }}</p>
+        </div>
+        {{/each}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.min.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
